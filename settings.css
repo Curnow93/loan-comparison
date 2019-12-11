@@ -1,0 +1,58 @@
+.getleads-options {margin-top: 12px;}
+.getleads-options input[type=text], .getleads-options textarea, .getleads-options select, .getleads-options #submit {margin: 2px 0 2px 0;padding: 2px;width: 100%;box-sizing: border-box;}
+.getleads-options p {margin: 4px 0;padding: 0;}
+.getleads-options h2 {color: #005F6B;margin-top:0;}
+.getleads-options table {width:100%;}
+.getleads-options th {text-align:left;}
+.getleads-options td {vertical-align:top;}
+.getleads-options img {max-width:40%;}
+.getleads-options .bank_number { padding-left: 20px !important; background: url('images/sortable.png') no-repeat 5px 5px; cursor: all-scroll;max-width:2em;}
+
+#sorting{width:100%;}
+#getleads_sort { position: relative !important; }
+#sorting li {outline: 1px solid #888;background:#E0E0E0; position: relative; }
+#sorting li tr {outline: none;}
+#sorting li td {padding: 2px;line-height:auto;}
+#sorting{border-collapse:separate;border-spacing:0 5px;}
+
+.addfield {background:#FFF;padding: 4px;border: 1px solid #888;}
+.fieldlist li{outline: 1px solid #888;background:#E0E0E0;display:inline-block;vertical-align:middle;margin: 0 4px 4px 0;padding: 0 6px;cursor:pointer; height: 30px; line-height: 30px; position: relative; }
+
+#selection-popup { z-index: 10000; position: fixed; width: 100%; height: 100%; display: none; }
+#selection-popup #modal { z-index: 9999; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0,0,0,.5); }
+#selection-popup #selection-dialog { background-color: white; z-index: 10001; width: 480px; height: 450px; position: fixed; left: calc(50% - 240px); top: calc(50% - 225px);}
+
+#selection-popup #selection-list { height: 420px; margin: 30px 17px 0 17px; overflow: scroll; overflow: hidden; }
+#selection-popup #selection-close { z-index: 10002; font-size: 20px; position: absolute; top: 5px; right: 5px; width: 20px; height: 20px;cursor: pointer;}
+
+#selection-popup .selection-option {
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+	width: 32.333333%;
+	height: 42px;
+	margin: 5px 0.5% 0 0.5%;
+	float: left;
+	text-align: center;
+	display: block; 
+	background-color: green;
+}
+
+#selection-popup .selection-option .selection-option-border {
+	width: 100%;
+	height: 100%;
+}
+
+#selection-popup .selection-option:hover * {
+	cursor: pointer;
+	opacity: .5;
+}
+
+.gl_close { position: absolute; top: 0; right: 0; width: 20px; height: 20px; color: #666; }
+.selection-used { display: none !important; }
+#selection-popup .selection-option .selection-option-title { line-height: 20px; height: 50%; font-weight: bold; background-color: #CCC; font-size: 14px}
+#selection-popup .selection-option .selection-option-type { line-height: 20px; height: 50%; background-color: #FFF;font-size: 12px }
+
+.ui-sortable-handle { min-height: 50px; display: block; }
+
+.ui-sortable-helper > td.ui-sortable-handle { display: none; } 
+.ui-sortable-helper > td { width: 100%; display: block; }

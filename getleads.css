@@ -1,0 +1,381 @@
+.gridcontent, #msform{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+/*homepage*/
+.getleads_homepage {
+    background: url(blue.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0;
+    margin: 32px 0;
+    color:#FFFFFF;
+}
+
+.getleads_homepage h1{
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+.getleads_homepage h5{
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.getleads_checkbox { height: 30px; clear: both; }
+.getleads_checkbox label { float: left !important; }
+
+p.warning > label { color: red;}
+
+
+/*stand alone form*/
+.getleads_page {
+    margin: 0 auto;
+    color: #067398;
+}
+
+.gridcontent {
+    margin: 0 auto 0;
+    text-align: left;
+    padding: 40px 0 20px 0;
+}
+
+/*form styles*/
+#msform { position: relative; max-width:400px; overflow: hidden;text-align: center;margin: 0 auto;}
+
+/*paragraphs*/
+#msform p {margin:4px 0;padding:0;text-align: left; line-height: 1.3em;color: #067398;}
+.getleads_homepage #msform p{color: #FFFFFF;}
+#msform p.warning {color:red;}
+#msform p.warning input, #msform p.warning select, #msform p.warning textarea  { border-color: red; }
+#msform p.loading { background-image: url('805.gif'); width: 100%; height: 64px; display: block; background-position: center center; background-repeat: no-repeat; }
+
+/*fieldsets*/
+#msform div.fieldsets { width: 100%; position: relative; overflow: hidden;  -webkit-transition: height 1s; /* Safari prior 6.1 */ transition: height 1s;}
+#msform div.fieldsets fieldset { width: 100%; display: none; position: absolute;  border: none; float: left; padding: 1px 0 50px 0;}
+.buttons { height: 50px; }
+
+h2.section_success_title {color:#FFF;}
+
+/*inputs*/
+
+#msform input[type=button] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#msform span.select {
+	position: relative !important;
+	display: block !important;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: auto;
+}
+#msform input[type=text], #msform input[type=tel], #msform input[type=email], #msform select, #msform textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin: 3px 0 10px 0;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+    font-size: 16px;
+}
+
+#msform input[type=range] {
+    background: none;
+    border:none;
+    padding:0;
+}
+
+#msform select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: white;
+    margin-right:6px;
+}
+
+#msform select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+#msform input[type="checkbox"] {display:none;}
+#msform input[type="checkbox"] + label::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+}
+
+#msform input[type="checkbox"].required+ label::before {border-color: #067398;}
+
+#msform p.warning input[type="checkbox"] + label::before {border-color: red;}
+
+#msform input[type="checkbox"]:checked+label::before {
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    background-color: #067398;
+}
+
+/* arrows */
+#msform select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+/*range*/
+#msform input[type=range] {
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+    width: 100%;
+    height: 18px;
+    background-color: transparent;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    cursor: pointer;
+    margin:0;
+    padding:0;
+}
+
+#msform input[type=range]:hover, #msform input[type=range]:focus, #msform input[type=range]:active {
+    opacity: 1;
+}
+
+#msform input[type=range]::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#msform input[type=range]::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #067398;
+    border: 1px solid #FFF;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -5px;
+    
+}
+
+#msform input[type=range]::-moz-range-track {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#msform input[type=range]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #067398;
+    border: 1px solid #FFF;
+    margin-top: 0;
+}
+
+#msform input[type=range]::-ms-track {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#msform input[type=range]::-ms-fill-upper {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#msform input[type=range]::-ms-fill-lower {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#msform input[type=range]::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #067398;
+    margin-top: 0;
+}
+
+/*required border*/
+#msform .required {
+    border: 1px solid #067398;
+}
+
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #067398;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 0;
+	bottom: 40px; 
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	background: #09233a;
+}
+#msform .next, #msform .submit {position:absolute;right:0;}
+#msform .previous {position:absolute; left:0;}
+
+/*progressbar*/
+#progressbar {
+	margin: 15px 0 15px 0;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+    line-height: 30px;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	font-size: 16px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	font-weight: 600;
+	width: 30px;
+	line-height: 30px;
+	display: block;
+	color: #067398;
+	background: #ccc;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 70%;
+	height: 2px;
+	background: #ccc;
+	position: absolute;
+	left: -50%;
+    margin: 0 15px;
+	top: 14px;
+}
+#progressbar li.active:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #067398;
+	color: white;
+}
+
+/*cell phone*/
+@media only screen and (max-width: 800px) {
+    .getleads_homepage {
+        display: block;
+        padding: 20px;
+    }
+    .getleads_page {
+    border: 3px solid #d9d9d9;
+    border-radius: 15px;
+    }
+    #msform fieldset {
+	   padding: 5px 10px 50px 10px;
+	   box-sizing: border-box;
+        border-radius: 10px;
+	   width: 100%;
+    }
+    .gridcontent {
+    padding: 20px;
+    }
+    .gridcontent h1{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+}
+
+/*
+	Submitting Animation
+*/
+.working_loading {
+	
+	font: 300 4em/150% Impact;
+	color: rgba(6, 115, 152, 1);
+	text-align: right;
+	position: relative;
+	left: calc(100% - 30px);
+	bottom: 18px;
+	
+}
+
+.buttons_working { display: none; }
+
+.working_loading:after {
+	content: ' .';
+	animation: dots 1s steps(5, end) infinite;
+	color: rgba(6, 115, 152, 1);
+}
+
+
+@keyframes dots {
+	0%, 20% {
+		color: rgba(6, 115, 152, 0);
+		text-shadow:
+			-.25em 0 0 rgba(6, 115, 152, 0),
+			-.5em 0 0 rgba(6, 115, 152, 0);
+	}
+	40% {
+		color: rgba(6, 115, 152, 0);
+		text-shadow:
+			-.25em 0 0 rgba(6, 115, 152, 0),
+			-.5em 0 0 rgba(6, 115, 152, 1);
+	}
+	60% {
+		color: rgba(6, 115, 152, 0);
+		text-shadow:
+			-.25em 0 0 rgba(6, 115, 152, 1),
+			-.5em 0 0 rgba(6, 115, 152, 1);
+	}
+	80%, 100% {
+		color: rgba(6, 115, 152, 1);
+		text-shadow:
+			-.25em 0 0 rgba(6, 115, 152, 1),
+			-.5em 0 0 rgba(6, 115, 152, 1);
+	}
+}
